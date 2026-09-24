@@ -1,0 +1,22 @@
+:root { --primary: #0d6efd; --dark: #212529; }
+body { font-family: 'Poppins', sans-serif; background: #f8f9fa; }
+
+/* Navbar Dropdown Hover Effect */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400');
+    height: 70vh; background-size: cover; color: white; display: flex; align-items: center; justify-content: center; text-align: center;
+}
+
+.feature-box { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+.feature-box:hover { transform: translateY(-10px); }
+
+/* Registration Form Card */
+.reg-card { border-radius: 20px; border: none; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
